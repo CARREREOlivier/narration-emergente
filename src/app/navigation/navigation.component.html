@@ -1,1 +1,16 @@
-<p>navigation works!</p>
+<nav>
+  <ul class="menu">
+    <li>
+      <a routerLink="/" routerLinkActive="actif" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+    </li>
+    <li>
+      <a routerLink="/aar" routerLinkActive="actif">AAR</a>
+    </li>
+    <li>
+      <a routerLink="/lets-play" routerLinkActive="actif">Let's Play</a>
+    </li>
+    <li>
+      <a routerLink="/fan-fiction" routerLinkActive="actif">Fan Fictions</a>
+    </li>
+  </ul>
+</nav>
