@@ -1,0 +1,38 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-accent-secondary);
+  color: var(--color-text);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid var(--color-accent);
+
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-column {
+  width: 32%;  /* Chaque colonne occupe environ un tiers de l'espace */
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  color: var(--color-accent);  /* Les titres des colonnes en couleur d'accent */
+}
+
+.footer-column p {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
