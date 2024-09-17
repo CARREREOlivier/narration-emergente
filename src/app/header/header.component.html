@@ -1,6 +1,6 @@
 <header>
-  <p>logo</p>
-  <p>titre/marque</p>
-  <p>log in</p>
-  <app-navigation/>
+  <h1>Narration Emergente</h1>
+<app-navigation></app-navigation>
+  <button *ngIf="!isConnected" routerLink="/connexion">Se connecter</button>
+  <button *ngIf="isConnected" (click)="logout()">Déconnexion</button>
 </header>
